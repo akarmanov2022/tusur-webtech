@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: #0000CD;
+    background: url("../assets/back.jpg") no-repeat center center fixed;
+}
+
+
+html {
+    width: 100%;
+}
+
+.header {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main img {
+    width: 10%;
+    height: 2%;
+}
+
+.dreamplace {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.dreamplace .name {
+    padding-bottom: 20px;
+}
+
+.main {
+    
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.main p, a {
+    margin-top: 15px;
+}
+
+.main__work {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__work img {
+    width: 25%;
+    border: 3px solid #0000CD;
+}
+
+.work__info {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.other {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.other table{
+    width: 300px;
+    height: 300px;
+}

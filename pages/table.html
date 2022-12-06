@@ -9,6 +9,15 @@
 	<title>Работа с таблицами</title>
 </head>
 
+<script src="../js/clock.js"></script>
+
+<script type="text/javascript">
+	function changeInputText(id){
+		var input = document.getElementById(id);
+		input.value = "Введите что-нибудь";
+	}
+</script>
+
 <body>
 	<div class="header">
 		<h1>
@@ -78,9 +87,15 @@
 						<img title="Утка кликабельна" style="width: 45%; height: 45%" src="../assets/utka.gif"></td>
 			</tr>
 		</table>
+		<div>
+			<input id="id_input" onfocus="changeInputText('id_input')">
+		</div>
 		<a href="#top"> Перейти вверх страницы.</a><br>
 		<a name="bot"></a>
 		<a href="../index.html"> Вернутся на главную страницу. </a>
+	</div>
+	<div id="id_clock">
+		<script>digitalClock()</script>
 	</div>
 </body>
 

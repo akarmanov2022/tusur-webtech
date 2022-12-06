@@ -62,9 +62,30 @@ html {
 
 .other {
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
 }
 
 .other table{
     width: 300px;
     height: 300px;
+}
+
+#id_clock, #id_timer {
+    position: absolute;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    cursor: pointer;
+    font-size: 27px;
+    border-radius: 5px;
+}
+
+#id_clock {
+    right: 50px;
+}
+
+#id_timer {
+    left: 50px;
 }

@@ -6,72 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Моя первая веб-страница</title>
+	<title>Главная</title>
 </head>
 
-<script src="js/clock.js"></script>
-<script src="js/timer.js"></script>
-<script src="js/sequence.js"></script>
-<script src="js/time.js"></script>
-
-
 <body>
-	<div class="header">
-		<h1>Персональная веб-страница</h1>
+	
+	<div class="navigation">
+		<input type="button" value="Дерево" onclick="window.location.href = 'pages/tree.html'">
+		<input type="button" value="Форма регистрации" onclick="window.location.href = 'pages/registration.html';">
 	</div>
-	<div class="main">
-		<p>
-			<I>
-				Карманов Арсений Викторович
-			</I>
-		</p>
-		<p>
-			<U>
-				Студент
-			</U>
-			<a target=blank href="https://tusur.ru/ru">
-				<img title="Картинка кликабельна" src="assets/tusur_logo.png">
-			</a>
-		</p>
-		<p>
-			<a target=blank href="https://timetable.tusur.ru/faculties/fvs/groups/571-2">
-				Группа 571-2
-			</a>
-		</p>
-		<p>
-			Дата рождения: 2001-02-08
-			<a href="pages/placeofbirth.html">
-				Место рождения
-			</a>
-		</p>
-		<p>
-			<a href="pages/education.html">
-				Прошлое место учебы и образование.
-			</a>
-		</p>
-		<p>
-			<a href="pages/dreamplace.html">
-				Места в которых хочу побывать.
-			</a>
-		</p>
-		<p>
-			<a href="pages/work.html">
-				Место работы.
-			</a>
-		</p>
-		<p>
-			<a href="pages/table.html">
-				Реализация таблиц html.
-			</a>
-		</p>
-	</div>
-	<div id="id_clock">
-		<script>digitalClock()</script>
-	</div>
-	<div id="id_timer">
-		На моей странице вы провели 0 секунд
-		<script>timer()</script>
-	</div>
+
 </body>
 
 </html>

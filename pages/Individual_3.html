@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<script>
+    $(document).ready(function () {
+        $(".test_div").each(function () {
+            var randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+            $(this).css('background-color', randomColor);
+            $(this).css("display", "none")
+        })
+
+        $("button").click(function () {
+            for (var k = 0; k <= 1000; k++) {
+                for (var i = 1; i <= 5; i++) {
+                    $("#div" + i).fadeIn(1000 + (i * 100));
+                };
+                for (var i = 5; i >= 1; i--) {
+                    console.log(i);
+                    $("#div" + i).fadeOut(1000 + (i * 100));
+                };
+            }
+        })
+    });
+</script>
+
+<body>
+    <div class="test">
+        <div id="div1" class="test_div"></div>
+        <div id="div2" class="test_div"></div>
+        <div id="div3" class="test_div"></div>
+        <div id="div4" class="test_div"></div>
+        <div id="div5" class="test_div"></div>
+    </div>
+    <button>Click me!</button>
+</body>
+
+</html>
+
+<!-- 4 вариант -->
